@@ -32,6 +32,5 @@ jobs:
       
     - name: Run python
       run: |
-        echo start input python code 
-        python -c "print("hello github action!!!")"
+        python -c "print('Hello Github Action')"
         
