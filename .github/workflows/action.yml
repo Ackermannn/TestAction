@@ -29,10 +29,10 @@ jobs:
 #      run: |
 #        pip install pytest
 #        pytest
-        
-    - name: Git my code
-      uses: Ackermannn/TestAction@v1.1.2
       
-    - name: Run hello.py
-      run: |
-        python hello.py
+    - name: Run python
+      run:
+        echo start input python code 
+        python
+        print("hello github action!!!")
+        
