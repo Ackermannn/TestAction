@@ -32,5 +32,6 @@ jobs:
       
     - name: Run python
       run: |
-        python -c "print('Hello Github Action')"
+        git clone https://github.com/Ackermannn/TestAction.git
+        python hello.py
         
