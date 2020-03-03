@@ -31,7 +31,7 @@ jobs:
 #        pytest
       
     - name: Run python
-      run:
+      run: |
         echo start input python code 
         python
         print("hello github action!!!")
