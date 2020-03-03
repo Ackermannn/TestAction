@@ -31,7 +31,7 @@ jobs:
 #        pytest
         
     - name: Git my code
-      uses: Ackermannn/TestAction@v1.1.1
+      uses: Ackermannn/TestAction@v1.1.2
       
     - name: Run hello.py
       run: |
