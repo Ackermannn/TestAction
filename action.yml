@@ -1,4 +1,4 @@
 runs:
   using: node12
-  main: hello.py
+#  main: hello.py
 
