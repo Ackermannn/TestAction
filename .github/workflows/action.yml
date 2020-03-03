@@ -1,4 +1,4 @@
-name: try
+name: Run Python & up .txt file
 
 on:
   push:
@@ -36,7 +36,6 @@ jobs:
       run: |
         git clone https://github.com/Ackermannn/TestAction.git
         python hello.py
-        steps:
 
     - name: Up something
       run: |
