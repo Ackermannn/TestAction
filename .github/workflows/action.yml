@@ -38,10 +38,10 @@ jobs:
         python hello.py
         steps:
 
-
-    - run: mkdir -p path/to/artifact
-
-    - run: echo hello > path/to/artifact/world.txt
+    - name: Up something
+      run: |
+        mkdir -p path/to/artifact
+        echo hello > path/to/artifact/world.txt
 
     - uses: actions/upload-artifact@v1
       with:
