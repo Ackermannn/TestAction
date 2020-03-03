@@ -1,7 +1,9 @@
 name: try
 
-on: [push]
-
+on:
+  push:
+    branches:
+    - upArt
 jobs:
   build:
 
@@ -34,4 +36,14 @@ jobs:
       run: |
         git clone https://github.com/Ackermannn/TestAction.git
         python hello.py
-        
+        steps:
+
+
+    - run: mkdir -p path/to/artifact
+
+    - run: echo hello > path/to/artifact/world.txt
+
+    - uses: actions/upload-artifact@v1
+      with:
+          name: my-artifact
+          path: path/to/artifact
